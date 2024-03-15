@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table tr th,
+    td{
+        border: 1px solid black;
+    }
+    #imgid{
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        color: brown;
+    }
+</style>
+<body>
+    <h1>E_COMMERCE APPLICATION</h1>
+    <form action="">
+    <div>
+        <label for="stackitem">Stack Item:</label>
+        <input type="text" id="stackitem">
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <input type="file" id="image">
+    </div>
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity">
+    </div>
+    <div>
+        <label for="rate">Rate:</label>
+        <input type="number" id="rate">
+    </div>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+    </div>
+    <div>
+        <input type="button" id="btn" value="Print Invoice">
+    </div> 
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Stack Item</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="tableid"></tbody>
+    </table>
+    <script src="./shop.js"></script>
+</body>
+</html>
